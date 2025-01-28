@@ -7,7 +7,6 @@ https://templatemo.com/tm-581-kind-heart-charity
 */
 
 
-
 @font-face {
     font-family: 'Metropolis';
     src: url('../fonts/Metropolis/Metropolis-Regular.woff2') format('woff2'),
@@ -574,6 +573,8 @@ strong {
   min-height: 680px;
 }
 
+
+
 #hero-slide .carousel-caption {
   background: var(--white-color);
   clip-path: polygon(100% 100%, 100% 150px, 0 100%);
@@ -687,6 +688,16 @@ strong {
 
 .custom-text-block {
   padding: 60px 40px;
+}
+
+
+/*---------------------------------------
+  EVENTS
+-----------------------------------------*/
+
+.carousel-item {
+  height: 480px;
+  min-height: 680px;
 }
 
 
