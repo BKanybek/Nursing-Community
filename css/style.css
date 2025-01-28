@@ -528,6 +528,8 @@ strong {
 /*---------------------------------------
   SITE HEADER              
 -----------------------------------------*/
+
+
 .site-header {
   background: var(--primary-color);
   padding-top: 15px;
@@ -562,17 +564,30 @@ strong {
   min-height: 680px;
   position: relative;
 }
+.carousel-control-next, .carousel-control-prev{
+  z-index: 10 !important;
+}
 
-.carousel:hover .carousel-control-next-icon, 
+
+.carousel:hover .carousel-control-next-icon,
 .carousel:hover .carousel-control-prev-icon {
   opacity: 1;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  pointer-events: none; /* Отключаем взаимодействие для фона */
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  pointer-events: auto; /* Включаем взаимодействие только для иконок */
 }
 
 #hero-slide .carousel-item {
   height: 680px;
   min-height: 680px;
 }
-
 
 
 #hero-slide .carousel-caption {
@@ -586,8 +601,14 @@ strong {
   text-align: right;
   min-width: 680px;
   min-height: 680px;
-  padding: 100px 100px 50px 100px;
-  z-index: 1000;
+  padding: 0 100px 50px 100px;
+}
+
+
+
+.carousel-caption-btn {
+  z-index: 1000; /* Более высокий z-index для элементов внутри слайда */
+  position: relative; /* Убедитесь, что кнопка позиционируется относительно */
 }
 
 .carousel-image {
@@ -609,12 +630,12 @@ strong {
   justify-content: inherit;
 }
 
-.carousel-control-next, 
+.carousel-control-next,
 .carousel-control-prev {
   opacity: 1;
 }
 
-.carousel-control-next-icon, 
+.carousel-control-next-icon,
 .carousel-control-prev-icon {
   background-color: var(--secondary-color);
   border-radius: var(--border-radius-large);
@@ -625,7 +646,7 @@ strong {
   transition: all 0.5s;
 }
 
-.carousel-control-next-icon:hover, 
+.carousel-control-next-icon:hover,
 .carousel-control-prev-icon:hover {
   background-color: var(--primary-color);
 }
@@ -687,7 +708,7 @@ strong {
 }
 
 .custom-text-block {
-  padding: 60px 40px;
+  padding: 0px 40px;
 }
 
 
@@ -1051,24 +1072,24 @@ blockquote::before {
 #testimonial-carousel .carousel-indicators li {
   text-indent: inherit;
   background: transparent;
-  margin: 0 10px; 
+  margin: 0 10px;
 }
 
 #testimonial-carousel .carousel-indicators li,
 #testimonial-carousel .carousel-indicators li::before {
   width: 45px;
-  height: 45px; 
+  height: 45px;
 }
 
 #testimonial-carousel .carousel-indicators .avatar-image {
   width: 45px;
-  height: 45px; 
+  height: 45px;
 }
 
 #testimonial-carousel .carousel-indicators .active,
 #testimonial-carousel .carousel-indicators .active .avatar-image {
   background: transparent;
-  width: 50px; 
+  width: 50px;
   height: 50px;
 }
 
@@ -1640,6 +1661,14 @@ blockquote::before {
   .carousel-control-prev-icon {
     width: 45px;
     height: 45px;
+  }
+
+  #hero-slide .carousel-caption{
+    padding: 0 20px 0 40px;
+  }
+
+  .crs-btn-wrapper{
+    padding: 20px 20px 0 40px;
   }
 
   .volunteer-image {
