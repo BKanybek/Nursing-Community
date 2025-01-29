@@ -351,7 +351,7 @@ strong {
 -----------------------------------------*/
 .navbar {
   background: var(--white-color);
-  z-index: 9;
+  z-index: 199;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -524,12 +524,9 @@ strong {
   top: 8px;
 }
 
-
 /*---------------------------------------
   SITE HEADER              
 -----------------------------------------*/
-
-
 .site-header {
   background: var(--primary-color);
   padding-top: 15px;
@@ -717,8 +714,6 @@ strong {
 -----------------------------------------*/
 
 .carousel-item {
-  height: 480px;
-  min-height: 680px;
 }
 
 
@@ -971,6 +966,11 @@ blockquote::before {
 /*---------------------------------------
   TESTIMONIAL CAROUSEL              
 -----------------------------------------*/
+
+.carousel-inner carousel-item{
+  height: 100%;
+}
+
 .testimonial-section {
   position: relative;
   overflow: hidden;
@@ -1063,10 +1063,7 @@ blockquote::before {
 
 #testimonial-carousel .carousel-indicators {
   position: relative;
-  top: 150px;
-  bottom: auto;
-  margin-top: 50px;
-  margin-bottom: 150px;
+  top: 50px;
 }
 
 #testimonial-carousel .carousel-indicators li {
@@ -1699,6 +1696,10 @@ blockquote::before {
 
   .donate-form {
     padding: 25px;
+  }
+
+  .contact-form{
+    padding: 20px;
   }
 }
 
