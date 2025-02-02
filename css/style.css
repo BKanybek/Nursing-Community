@@ -715,8 +715,15 @@ strong {
   EVENTS
 -----------------------------------------*/
 
-.carousel-item {
-  height: 200px;
+#events-carousel .carousel-item {
+  height: 400px; /* Установи нужную высоту */
+}
+
+#events-carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Обрезает изображение, сохраняя пропорции */
+  border-radius: 10px; /* Скругление углов, если нужно */
 }
 
 
@@ -1785,5 +1792,12 @@ blockquote::before {
   .contact-form{
     padding: 20px;
   }
+
+  #carousel-item .carousel-item {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
 }
 
