@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Healthcare UK",
+    "logo": "images/partners/healthCara.png",
+    "description": "Leading healthcare provider in the UK, offering quality medical services.",
+    "website": "https://www.healthcareuk.com"
+  },
+  {
+    "name": "Global Medical",
+    "logo": "images/partners/global.png",
+    "description": "A worldwide network of medical professionals ensuring top-tier healthcare solutions.",
+    "website": "https://www.globalmedical.com"
+  },
+  {
+    "name": "MediTrust",
+    "logo": "images/partners/meditrust.png",
+    "description": "Providing secure and trusted healthcare solutions to hospitals and clinics.",
+    "website": "https://www.meditrust.com"
+  }
+]

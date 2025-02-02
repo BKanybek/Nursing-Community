@@ -587,6 +587,8 @@ strong {
 }
 
 
+
+
 #hero-slide .carousel-caption {
   background: var(--white-color);
   clip-path: polygon(100% 100%, 100% 150px, 0 100%);
@@ -714,6 +716,7 @@ strong {
 -----------------------------------------*/
 
 .carousel-item {
+  height: 200px;
 }
 
 
@@ -1404,6 +1407,76 @@ blockquote::before {
 
 
 /*---------------------------------------
+ PARTNERS SECTION
+-----------------------------------------*/
+
+.partners-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.partner-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.partner-logo {
+  max-width: 150px;
+  height: 100px;
+}
+
+
+/*---------------------------------------
+ jobs page
+-----------------------------------------*/
+
+.custom-block {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.custom-block:hover {
+  transform: translateY(-5px);
+}
+
+.job-image {
+  width: 250px;
+  border-radius: 10px 10px 0 0;
+}
+
+
+/*---------------------------------------
+ JOBS-DETAIL PAGE
+-----------------------------------------*/
+
+.job-detail-section {
+  padding: 60px 0;
+}
+
+.job-detail-block {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+
+.job-detail-block ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+
+
+
+/*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
 @media screen and (min-width: 1600px) {
@@ -1526,6 +1599,12 @@ blockquote::before {
     padding-bottom: 100px;
   }
 
+  .news-block-top img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+  }
+
   .cta-section::before {
     width: 150px;
     height: 150px;
@@ -1621,8 +1700,7 @@ blockquote::before {
   }
 
   #hero-slide .carousel-caption {
-    clip-path: polygon(100% 100%, 100% 100px, 0 100%);
-    padding-right: 50px;
+    clip-path: polygon(100% 100%, 100% 90px, 0 100%);
     min-width: inherit;
     min-height: inherit;
   }
@@ -1649,9 +1727,10 @@ blockquote::before {
     font-size: 20px;
   }
 
-  #hero-slide .carousel-caption {
-    min-width: inherit;
-    padding-bottom: 30px;
+
+
+  #hero-slide .carousel-caption h1{
+    margin-left: 20px;
   }
 
   .carousel-control-next-icon, 
@@ -1665,7 +1744,12 @@ blockquote::before {
   }
 
   .crs-btn-wrapper{
-    padding: 20px 20px 0 40px;
+    padding: 20px 20px 10px 40px;
+    margin: 0 10px;
+  }
+
+  .custom-text-box .counter-thumb{
+    margin-top: 0!important;
   }
 
   .volunteer-image {

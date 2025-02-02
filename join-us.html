@@ -99,6 +99,7 @@
                 <li class="nav-item">
                     <a class="nav-link click-scroll" href="jobs.html">Jobs</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link click-scroll" href="index.html#section_6">Contact</a>
                 </li>
@@ -112,13 +113,45 @@
 </nav>
 
 <main>
-    <section class="jobs-section section-padding">
+    <section class="join-us-section section-padding">
         <div class="container">
-            <div class="row" id="jobs-container">
-                <!-- Карточки вакансий будут загружаться сюда динамически -->
+            <div class="row">
+                <div class="col-lg-5 col-12 mx-auto">
+                    <form class="custom-form contact-form" id="joinForm" role="form">
+                        <h2>Join Our Nursing Community</h2>
+                        <p class="mb-4">Fill out the form below to apply, and our team will reach out to you soon.</p>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <input type="text" id="first-name" class="form-control" placeholder="First Name" required>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <input type="text" id="last-name" class="form-control" placeholder="Last Name" required>
+                            </div>
+                        </div>
+
+                        <input type="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Your Email" required>
+
+                        <input type="tel" id="phone" class="form-control" placeholder="Your Phone Number" required>
+
+                        <select id="position" class="form-control">
+                            <option value="Registered Nurse">Registered Nurse</option>
+                            <option value="Pediatric Nurse">Pediatric Nurse</option>
+                            <option value="Nurse Practitioner">Nurse Practitioner</option>
+                            <option value="Other">Other</option>
+                        </select>
+
+                        <textarea id="message" rows="4" class="form-control" placeholder="Your Message"></textarea>
+
+                        <button type="submit" class="form-control btn btn-primary">Submit Application</button>
+
+                        <p id="responseMessage" class="text-center mt-3"></p>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
+
 </main>
 
 <footer class="site-footer">
@@ -217,6 +250,7 @@
 <script src="js/counter.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/join-form.js"></script>
 
 </body>
 </html>

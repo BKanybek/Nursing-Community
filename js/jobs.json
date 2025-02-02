@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Registered Nurse",
+    "location": "London, UK",
+    "salary": "£35,000 - £45,000",
+    "description": "We are looking for a dedicated Registered Nurse to join our team in London.",
+    "requirements": "Valid nursing license in the UK; Minimum of 2 years of experience; Strong communication and interpersonal skills; Ability to work in a fast-paced environment.",
+    "jobType": "Full-time",
+    "image": "images/jobs/jobs2.avif"
+  },
+  {
+    "id": 2,
+    "title": "Pediatric Nurse",
+    "location": "London, UK",
+    "salary": "£40,000 - £50,000",
+    "description": "We are hiring a Pediatric Nurse to work in our children's clinic in London.",
+    "requirements": "Experience in pediatric care; Compassionate and patient-oriented; Strong teamwork skills.",
+    "jobType": "Full-time",
+    "image": "images/jobs/jobs3.avif"
+  },
+  {
+    "id": 3,
+    "title": "Nurse Practitioner",
+    "location": "London, UK",
+    "salary": "£50,000 - £60,000",
+    "description": "We are seeking a skilled Nurse Practitioner to provide primary care in London.",
+    "requirements": "Advanced nursing degree; Experience in a clinical setting; Excellent diagnostic skills.",
+    "jobType": "Full-time",
+    "image": "images/jobs/jobs4.avif"
+  }
+]
